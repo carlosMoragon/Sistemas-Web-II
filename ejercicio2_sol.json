@@ -51,13 +51,15 @@
                         "type": "string"
                     },
                     "age": {
-                        "type": "number"
+                        "type": "number",
+                        "minimum": 0
                     },
                     "secretIdentity": {
                         "type": "string"
                     },
                     "powers": {
                         "type": "array",
+                        "minItems": 1,
                         "items": {
                             "type": "string"
                         }
