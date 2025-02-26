@@ -10,3 +10,5 @@ Ahí encontrarás 4 botones, para enviar 4 POST distintos:
 * Suzuki a coche te devuelve 400.
 * Mercedes a moto te devuelve 400.
 * Suzuki a moto te devuelve 200.
+
+Para ver el código te puede abrir la consola del servidor o la consola del navegador.
