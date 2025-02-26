@@ -60,6 +60,7 @@
                     "powers": {
                         "type": "array",
                         "minItems": 1,
+                        "unique": true,
                         "items": {
                             "type": "string"
                         }
