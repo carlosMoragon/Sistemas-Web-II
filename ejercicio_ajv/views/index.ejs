@@ -15,23 +15,23 @@
 
     <script>
       document.getElementById('mercedes_coche').addEventListener('click', () => {
-        // Cargar el JSON de Mercedes desde la ruta estática
+        
         fetch('/ejemplos/mercedes.json')
-          .then(response => response.json())  // Parsear el JSON
+          .then(response => response.json())
           .then(datos => {
-            console.log("Datos que se envían a /coche:", datos); // Ver los datos que se envían
+            console.log("Datos que se envían a /coche:", datos); 
 
             return fetch('/coche', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify(datos)  // Enviar los datos en el cuerpo de la solicitud
+              body: JSON.stringify(datos)  
             });
           })
           .then(response => {
             if (response.ok) {
-              return response.json();  // Obtener la respuesta del servidor
+              return response.json();  
             }
             throw new Error('Error al enviar los datos');
           })
@@ -44,9 +44,8 @@
       });
 
       document.getElementById('suzuki_coche').addEventListener('click', () => {
-        // Cargar el JSON de Suzuki desde la ruta estática
         fetch('/ejemplos/suzuki.json')
-          .then(response => response.json())  // Parsear el JSON
+          .then(response => response.json()) 
           .then(datos => {
             return fetch('/coche', {
               method: 'POST',
@@ -71,9 +70,9 @@
       });
 
       document.getElementById('mercedes_moto').addEventListener('click', () => {
-        // Cargar el JSON de Mercedes desde la ruta estática
+        
         fetch('/ejemplos/mercedes.json')
-          .then(response => response.json())  // Parsear el JSON
+          .then(response => response.json())  
           .then(datos => {
             return fetch('/moto', {
               method: 'POST',
@@ -98,9 +97,9 @@
       });
 
       document.getElementById('suzuki_moto').addEventListener('click', () => {
-        // Cargar el JSON de Suzuki desde la ruta estática
+        
         fetch('/ejemplos/suzuki.json')
-          .then(response => response.json())  // Parsear el JSON
+          .then(response => response.json())  
           .then(datos => {
             return fetch('/moto', {
               method: 'POST',
