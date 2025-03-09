@@ -12,3 +12,7 @@ Ahí encontrarás 4 botones, para enviar 4 POST distintos:
 * Suzuki a moto te devuelve 200.
 
 Para ver el código puedes abrir la consola del servidor o la consola del navegador.
+
+### Ejercicio OpenAPI:
+
+![](https://github.com/carlosMoragon/Sistemas-Web-II/blob/main/ejercicio_OpenAPI/ejercicio_cine.png)
