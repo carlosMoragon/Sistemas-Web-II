@@ -20,4 +20,4 @@
     $ db.inspections.countDocuments({ 
         date: { $in: ["Feb 20 2015", "Feb 21 2015"] },
         sector: { $ne: "Cigarette Retail Dealer - 127" }
-    }) -> 0
+    }) -> 204
