@@ -21,3 +21,7 @@
         date: { $in: ["Feb 20 2015", "Feb 21 2015"] },
         sector: { $ne: "Cigarette Retail Dealer - 127" }
     }) -> 204
+    $ db.inspections.countDocuments({ 
+        date: { $in: ["Feb 20 2015", "Feb 21 2015"] },
+        sector: { $ne: "Cigarette Retail Dealer - 127" }
+    }) -> 204
