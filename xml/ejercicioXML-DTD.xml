@@ -13,7 +13,7 @@
 <!-- Solución -->
 <!DOCTYPE articles [
     <!ELEMENT articles (article+)>
-    <!ELEMENT article (name,month, author, reviews+, feedback)>
+    <!ELEMENT article (name,month, author, (reviews, feedback?)+)>
     <!ATTLIST article id CDATA #REQUIRED>
     <!ELEMENT name (#PCDATA)>
     <!ELEMENT month (#PCDATA)>
